@@ -1,0 +1,15 @@
+.footer__btn{
+	&:link{
+		@include btn-styling;
+	}
+	&:visited{
+		@include btn-styling;
+	}
+	&:hover{
+		@include btn-styling;
+	}
+	&:active{
+		@include btn-styling;
+	}
+		
+}

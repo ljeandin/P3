@@ -1,0 +1,47 @@
+body {
+  font-family: arial;
+  margin: 0; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #569C87; }
+  .header__logo {
+    width: 450px;
+    padding: 50px; }
+
+.main__menu {
+  width: 40%; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #569C87; }
+
+.footer__btn:link {
+  color: #DDBF56;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0 30px; }
+.footer__btn:visited {
+  color: #DDBF56;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0 30px; }
+.footer__btn:hover {
+  color: #DDBF56;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0 30px; }
+.footer__btn:active {
+  color: #DDBF56;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0 30px; }
+
+/*# sourceMappingURL=main.css.map */
