@@ -5,3 +5,7 @@
 	font-weight:bold;
 	padding:0 30px;
 }
+
+@mixin shadows{
+	box-shadow:0 0 20px grey;	
+}

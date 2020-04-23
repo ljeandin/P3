@@ -1,7 +1,28 @@
 .main{
-	
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	align-items:center;
+	&__container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	}
 	&__menu{
-	width:40%
+	width:500px;
+	margin:20px;
+	@include shadows;
+	}
+	&__btn {
+	color:&color-primary;
+	}
+	&__menudetail{
+	margin:20px;
+	@include shadows;
+	}
+	&__title{
+	padding:0;
 	}
 
 }

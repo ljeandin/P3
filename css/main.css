@@ -10,8 +10,27 @@ body {
     width: 450px;
     padding: 50px; }
 
-.main__menu {
-  width: 40%; }
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .main__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .main__menu {
+    width: 500px;
+    margin: 20px;
+    box-shadow: 0 0 20px grey; }
+  .main__btn {
+    color: .main__btn color-primary; }
+  .main__menudetail {
+    margin: 20px;
+    box-shadow: 0 0 20px grey; }
+  .main__title {
+    padding: 0; }
 
 .footer {
   display: flex;
