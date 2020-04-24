@@ -3,24 +3,37 @@
 	flex-direction:column;
 	flex-wrap:wrap;
 	align-items:center;
+	padding:$margin 0;
+	background-color:$background-color;
+	
 	&__container{
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:center;
 	}
+	
 	&__menu{
 	width:500px;
-	margin:20px;
+	margin:$margin;
 	@include shadows;
 	}
+	
 	&__btn {
-	color:&color-primary;
+	color:$color-secondary;
+	background-color:$color-primary;
+	padding:0 50px;
+	margin:$margin;
+	border-radius:20px;
+	font-size:3em;
+	font-weight:bold;
 	}
+	
 	&__menudetail{
-	margin:20px;
 	@include shadows;
+	margin-bottom:$margin;
 	}
+	
 	&__title{
 	padding:0;
 	}

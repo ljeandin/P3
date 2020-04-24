@@ -7,5 +7,5 @@
 }
 
 @mixin shadows{
-	box-shadow:0 0 20px grey;	
+	box-shadow:0 0 30px darken($background-color, 20%);	
 }
