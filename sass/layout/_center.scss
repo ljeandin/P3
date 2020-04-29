@@ -14,9 +14,13 @@
 	}
 	
 	&__menu{
-	width:500px;
-	margin:$margin;
 	@include shadows;
+	@include menu-styling;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+
 	}
 	
 	&__btn {
@@ -24,18 +28,28 @@
 	background-color:$color-primary;
 	padding:0 50px;
 	margin:$margin;
+	margin-bottom:$margin*2;
 	border-radius:20px;
-	font-size:3em;
+	font-size:30px;
 	font-weight:bold;
 	}
 	
 	&__menudetail{
 	@include shadows;
-	margin-bottom:$margin;
+	margin-bottom:$margin*2;
 	}
 	
 	&__title{
 	padding:0;
 	}
 
+}
+
+.contenu{
+	&__titre{
+
+	}
+	&__sstitre{
+
+	}
 }

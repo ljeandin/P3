@@ -23,24 +23,37 @@ body {
     flex-wrap: wrap;
     justify-content: center; }
   .main__menu {
+    box-shadow: 0 0 30px #cccccc;
+    background-color: aqua;
+    color: black;
+    text-decoration: none;
+    font-family: georgia;
     width: 500px;
+    height: 700px;
     margin: 50px;
-    box-shadow: 0 0 30px #cccccc; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .main__btn {
     color: #FCCA46;
     background-color: #569C87;
     padding: 0 50px;
     margin: 50px;
+    margin-bottom: 100px;
     border-radius: 20px;
-    font-size: 3em;
+    font-size: 30px;
     font-weight: bold; }
   .main__menudetail {
     box-shadow: 0 0 30px #cccccc;
-    margin-bottom: 50px; }
+    margin-bottom: 100px; }
   .main__title {
     padding: 0; }
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -49,25 +62,25 @@ body {
 .footer__btn:link {
   color: #FCCA46;
   text-decoration: none;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 0 30px; }
 .footer__btn:visited {
   color: #FCCA46;
   text-decoration: none;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 0 30px; }
 .footer__btn:hover {
   color: #FCCA46;
   text-decoration: none;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 0 30px; }
 .footer__btn:active {
   color: #FCCA46;
   text-decoration: none;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 0 30px; }
 
