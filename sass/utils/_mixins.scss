@@ -10,11 +10,13 @@
 	box-shadow:0 0 30px darken($background-color, 20%);	
 }
 
-@mixin card-styling ($backcolor:aqua, $font-family:georgia){
+@mixin card-styling ($backcolor:aqua, $txt-clr:green, $font-family:yellowsun){
 	width:500px;
 	height:700px;
 	margin:$margin;
 	background-color:$backcolor;
+	color:$txt-clr;
+	font-size: 2em;
 	font-family: $font-family;
 	text-decoration: none;
 
@@ -32,4 +34,9 @@
 	background: linear-gradient(to bottom right, $left-clr 0%, $right-clr 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+@mixin name ($font-size:1em, $font-family: Arial){
+	font-size:$font-size;
+	font-family: $font-family;
 }

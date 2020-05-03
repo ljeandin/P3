@@ -2,6 +2,11 @@ body {
   font-family: arial;
   margin: 0; }
 
+@font-face {
+  font-family: 'yellowsun';
+  src: url("../media/fonts/yellowsun/dk_lemon_yellow_sun-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 .header {
   display: flex;
   justify-content: center;
@@ -30,7 +35,9 @@ body {
   height: 700px;
   margin: 50px;
   background-color: #FCDFDB;
-  font-family: georgia;
+  color: #3C1218;
+  font-size: 2em;
+  font-family: yellowsun;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -38,12 +45,22 @@ body {
   align-items: center;
   text-align: center;
   box-shadow: 0 0 30px #cccccc; }
+  .card__enchantee--icon {
+    background: linear-gradient(to bottom right, #F04A5E 0%, #F78F6A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em; }
+  .card__enchantee--name {
+    font-size: 1em;
+    font-family: Arial; }
 
 .card__francaise {
   width: 500px;
   height: 700px;
   margin: 50px;
   background-color: #FFF5FE;
+  color: #C77412;
+  font-size: 2em;
   font-family: georgia;
   text-decoration: none;
   display: flex;
@@ -52,13 +69,21 @@ body {
   align-items: center;
   text-align: center;
   box-shadow: 0 0 30px #cccccc; }
+  .card__francaise--name {
+    font-size: 1em;
+    font-family: Arial;
+    background: linear-gradient(to bottom right, #C77412 0%, #905BFD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .card__papilles {
   width: 500px;
   height: 700px;
   margin: 50px;
   background-color: #F9F9F9;
-  font-family: georgia;
+  color: #0887FB;
+  font-size: 2em;
+  font-family: yellowsun;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -66,13 +91,21 @@ body {
   align-items: center;
   text-align: center;
   box-shadow: 0 0 30px #cccccc; }
+  .card__papilles--name {
+    font-size: 1em;
+    font-family: Arial;
+    background: linear-gradient(to bottom right, #035fb4 0%, #0887FB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .card__gout {
   width: 500px;
   height: 700px;
   margin: 50px;
   background-color: #FDFFFD;
-  font-family: georgia;
+  color: #72BF56;
+  font-size: 2em;
+  font-family: yellowsun;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -80,6 +113,12 @@ body {
   align-items: center;
   text-align: center;
   box-shadow: 0 0 30px #cccccc; }
+  .card__gout--name {
+    font-size: 1em;
+    font-family: Arial;
+    background: linear-gradient(to bottom right, #59a43e 0%, #b0dba0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .bientot {
   color: #FCCA46;

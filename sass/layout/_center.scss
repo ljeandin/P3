@@ -16,29 +16,52 @@
 }
 
 .card__enchantee{
-	@include card-styling ($m1back);
+	@include card-styling ($m1back, $m1txt);
 	@include center;
 	@include shadows;
+	&--icon{
+		@include gradient(#F04A5E, #F78F6A);
+		font-size: 2em;
+	}
+	
+	&--name{
+		@include name;
+	}
 }
 
+
+
 .card__francaise{
-	@include card-styling ($m2back);
+	@include card-styling ($m2back, $m2txt, georgia);
 	@include center;
 	@include shadows;
+	&--name{
+		@include name;
+		@include gradient($m2txt, #905BFD);
+
+	}
 
 }
 
 .card__papilles{
-	@include card-styling ($m3back);
+	@include card-styling ($m3back, $m3txt);
 	@include center;
 	@include shadows;
+	&--name{
+		@include name;
+		@include gradient(darken($m3txt, 15%), $m3txt);
+	}
 
 }
 
 .card__gout{
-	@include card-styling ($m4back);
+	@include card-styling ($m4back, $m4txt);
 	@include center;
 	@include shadows;
+	&--name{
+		@include name;
+		@include gradient(darken($m4txt, 10%), lighten($m4txt, 20%));
+	}
 
 }
 
