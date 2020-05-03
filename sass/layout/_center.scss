@@ -5,72 +5,52 @@
 	align-items:center;
 	padding:$margin 0;
 	background-color:$background-color;
+}
 	
-	&__container{
+.cards-list{
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:center;
-	}
-	
-	&__menu{
-		
-		&--note{
-		@include shadows;
-		@include menu-styling ($m1back ,$m1text);
-		@include flex;
-		}
+	margin:$margin;
+}
 
-		&--chic{
-		@include shadows;
-		@include menu-styling ($m2back ,$m2text);
-		@include flex;
-		}
+.card__enchantee{
+	@include card-styling ($m1back);
+	@include center;
+	@include shadows;
+}
 
-		&--delice{
-		@include shadows;
-		@include menu-styling ($m3back ,$m3text);
-		@include flex;	
-		}
+.card__francaise{
+	@include card-styling ($m2back);
+	@include center;
+	@include shadows;
 
-		&--palette{
-		@include shadows;
-		@include menu-styling ($m4back ,$m4text);
-		@include flex;
-		}
-	}
-	
-	&__btn {
+}
+
+.card__papilles{
+	@include card-styling ($m3back);
+	@include center;
+	@include shadows;
+
+}
+
+.card__gout{
+	@include card-styling ($m4back);
+	@include center;
+	@include shadows;
+
+}
+
+
+.bientot{
 	color:$color-secondary;
 	background-color:$color-primary;
+	text-align: center;
+	width: 250px;
 	padding:0 50px;
-	margin:$margin;
+	margin:auto;
 	margin-bottom:$margin*2;
-	border-radius:20px;
-	font-size:30px;
-	font-weight:bold;
-	}
-	
-	&__menudetail{
-	@include shadows;
-	margin-bottom:$margin*2;
-	}
-	
-	&__title{
-	padding:0;
-	}
-
-	&__contenu{
-		
-		&--titre{
-		font-size:24px;
-		}
-
-		&--sstitre{
-		font-size:32px;
-
-		}
-	}
-	
-
+	border-radius:10px;
+	font-size:36px;
 }

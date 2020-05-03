@@ -10,19 +10,26 @@
 	box-shadow:0 0 30px darken($background-color, 20%);	
 }
 
-@mixin menu-styling ($backcolor:aqua, $text-color:black, $font-family:georgia){
+@mixin card-styling ($backcolor:aqua, $font-family:georgia){
 	width:500px;
 	height:700px;
 	margin:$margin;
 	background-color:$backcolor;
-	color:$text-color;
 	font-family: $font-family;
+	text-decoration: none;
 
 }
 
-@mixin flex{
+@mixin center{
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
+	text-align: center;
+}
+
+@mixin gradient ($left-clr:aqua, $right-clr:black){
+	background: linear-gradient(to bottom right, $left-clr 0%, $right-clr 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

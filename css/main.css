@@ -17,77 +17,80 @@ body {
   align-items: center;
   padding: 50px 0;
   background-color: #FFF; }
-  .main__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .main__menu--note {
-    box-shadow: 0 0 30px #cccccc;
-    width: 500px;
-    height: 700px;
-    margin: 50px;
-    background-color: #FCDFDB;
-    color: #3C1218;
-    font-family: georgia;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .main__menu--chic {
-    box-shadow: 0 0 30px #cccccc;
-    width: 500px;
-    height: 700px;
-    margin: 50px;
-    background-color: #FFF5FE;
-    color: #3C1218;
-    font-family: georgia;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .main__menu--delice {
-    box-shadow: 0 0 30px #cccccc;
-    width: 500px;
-    height: 700px;
-    margin: 50px;
-    background-color: #F9F9F9;
-    color: #3C1218;
-    font-family: georgia;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .main__menu--palette {
-    box-shadow: 0 0 30px #cccccc;
-    width: 500px;
-    height: 700px;
-    margin: 50px;
-    background-color: #FDFFFD;
-    color: #3C1218;
-    font-family: georgia;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .main__btn {
-    color: #FCCA46;
-    background-color: #569C87;
-    padding: 0 50px;
-    margin: 50px;
-    margin-bottom: 100px;
-    border-radius: 20px;
-    font-size: 30px;
-    font-weight: bold; }
-  .main__menudetail {
-    box-shadow: 0 0 30px #cccccc;
-    margin-bottom: 100px; }
-  .main__title {
-    padding: 0; }
-  .main__contenu--titre {
-    font-size: 24px; }
-  .main__contenu--sstitre {
-    font-size: 32px; }
+
+.cards-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px; }
+
+.card__enchantee {
+  width: 500px;
+  height: 700px;
+  margin: 50px;
+  background-color: #FCDFDB;
+  font-family: georgia;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 30px #cccccc; }
+
+.card__francaise {
+  width: 500px;
+  height: 700px;
+  margin: 50px;
+  background-color: #FFF5FE;
+  font-family: georgia;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 30px #cccccc; }
+
+.card__papilles {
+  width: 500px;
+  height: 700px;
+  margin: 50px;
+  background-color: #F9F9F9;
+  font-family: georgia;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 30px #cccccc; }
+
+.card__gout {
+  width: 500px;
+  height: 700px;
+  margin: 50px;
+  background-color: #FDFFFD;
+  font-family: georgia;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 30px #cccccc; }
+
+.bientot {
+  color: #FCCA46;
+  background-color: #569C87;
+  text-align: center;
+  width: 250px;
+  padding: 0 50px;
+  margin: auto;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  font-size: 36px; }
 
 .footer {
   position: fixed;
