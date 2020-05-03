@@ -11,12 +11,18 @@
 }
 
 @mixin menu-styling ($backcolor:aqua, $text-color:black, $font-family:georgia){
-	background-color:$backcolor;
-	color:$text-color;
-	text-decoration: none;
-	font-family: $font-family;
 	width:500px;
 	height:700px;
 	margin:$margin;
+	background-color:$backcolor;
+	color:$text-color;
+	font-family: $font-family;
 
+}
+
+@mixin flex{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
 }

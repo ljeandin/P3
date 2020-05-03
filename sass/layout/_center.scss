@@ -14,13 +14,30 @@
 	}
 	
 	&__menu{
-	@include shadows;
-	@include menu-styling;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
+		
+		&--note{
+		@include shadows;
+		@include menu-styling ($m1back ,$m1text);
+		@include flex;
+		}
 
+		&--chic{
+		@include shadows;
+		@include menu-styling ($m2back ,$m2text);
+		@include flex;
+		}
+
+		&--delice{
+		@include shadows;
+		@include menu-styling ($m3back ,$m3text);
+		@include flex;	
+		}
+
+		&--palette{
+		@include shadows;
+		@include menu-styling ($m4back ,$m4text);
+		@include flex;
+		}
 	}
 	
 	&__btn {
@@ -43,13 +60,17 @@
 	padding:0;
 	}
 
-}
+	&__contenu{
+		
+		&--titre{
+		font-size:24px;
+		}
 
-.contenu{
-	&__titre{
+		&--sstitre{
+		font-size:32px;
 
+		}
 	}
-	&__sstitre{
+	
 
-	}
 }
