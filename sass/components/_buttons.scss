@@ -7,6 +7,7 @@
 	}
 	&:hover{
 		@include btn-styling;
+		color:darken($color-secondary , 30%);
 	}
 	&:active{
 		@include btn-styling;

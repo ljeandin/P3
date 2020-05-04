@@ -1,0 +1,51 @@
+.card-page{
+	
+	.card__francaise--name.top{
+		font-size: 2em;
+	}
+
+	.plat--fra{
+		color:#A56799;
+	}
+
+	.dessert--fra{
+		color:#6E4CCC;
+	}
+
+	&--francaise{
+		@include card-page ($m2back , $m2txt, georgia, 1.2em) ;
+	}
+	
+	section{
+		width: 100%;
+		margin-bottom: $margin;
+	}
+	
+	&__content{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		text-align: left;
+	}
+
+	&__header--francaise{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		align-items:center;
+		.separator{
+		height: 3px;
+		background-color:$m2txt;
+		&--left{
+			width: 30%;
+		}
+
+		&--right{
+			width: 30%;
+		}
+
+		}
+
+	}
+
+}

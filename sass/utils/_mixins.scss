@@ -41,3 +41,18 @@
 	font-family: $font-family;
 	padding:10px;
 }
+
+@mixin card-page ($backcolor:aqua, $txt-clr:green, $font-family:yellowsun, $font-size:2em){
+	width: auto;
+	height:auto;
+	margin:$margin;
+	margin-bottom: $margin*2;
+	padding:$margin*2;
+	background-color:$backcolor;
+	color:$txt-clr;
+	font-family: $font-family;
+	font-size: $font-size;
+	text-decoration: none;
+	text-align: center;
+
+}
