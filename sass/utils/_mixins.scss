@@ -36,7 +36,8 @@
 	-webkit-text-fill-color: transparent;
 }
 
-@mixin name ($font-size:1em, $font-family: Arial){
+@mixin name ($font-family: Arial, $font-size:1em){
 	font-size:$font-size;
 	font-family: $font-family;
+	padding:10px;
 }

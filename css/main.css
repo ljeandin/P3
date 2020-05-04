@@ -7,6 +7,26 @@ body {
   src: url("../media/fonts/yellowsun/dk_lemon_yellow_sun-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'candy';
+  src: url("../media/fonts/candy/candy_chicks-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'kaushan';
+  src: url("../media/fonts/kaushan/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'lobster';
+  src: url("../media/fonts/lobster/lobster_1.4-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'anada';
+  src: url("../media/fonts/anada/ananda_personal_use-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 .header {
   display: flex;
   justify-content: center;
@@ -51,8 +71,9 @@ body {
     -webkit-text-fill-color: transparent;
     font-size: 2em; }
   .card__enchantee--name {
-    font-size: 1em;
-    font-family: Arial; }
+    font-size: 1.2em;
+    font-family: candy;
+    padding: 10px; }
 
 .card__francaise {
   width: 500px;
@@ -71,7 +92,8 @@ body {
   box-shadow: 0 0 30px #cccccc; }
   .card__francaise--name {
     font-size: 1em;
-    font-family: Arial;
+    font-family: lobster;
+    padding: 10px;
     background: linear-gradient(to bottom right, #C77412 0%, #905BFD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -93,7 +115,8 @@ body {
   box-shadow: 0 0 30px #cccccc; }
   .card__papilles--name {
     font-size: 1em;
-    font-family: Arial;
+    font-family: anada;
+    padding: 10px;
     background: linear-gradient(to bottom right, #035fb4 0%, #0887FB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -115,7 +138,8 @@ body {
   box-shadow: 0 0 30px #cccccc; }
   .card__gout--name {
     font-size: 1em;
-    font-family: Arial;
+    font-family: kaushan;
+    padding: 10px;
     background: linear-gradient(to bottom right, #59a43e 0%, #b0dba0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }

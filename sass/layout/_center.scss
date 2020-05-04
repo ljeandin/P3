@@ -25,7 +25,7 @@
 	}
 	
 	&--name{
-		@include name;
+		@include name (candy, 1.2em);
 	}
 }
 
@@ -36,7 +36,7 @@
 	@include center;
 	@include shadows;
 	&--name{
-		@include name;
+		@include name (lobster);
 		@include gradient($m2txt, #905BFD);
 
 	}
@@ -48,7 +48,7 @@
 	@include center;
 	@include shadows;
 	&--name{
-		@include name;
+		@include name (anada);
 		@include gradient(darken($m3txt, 15%), $m3txt);
 	}
 
@@ -59,7 +59,7 @@
 	@include center;
 	@include shadows;
 	&--name{
-		@include name;
+		@include name (kaushan);
 		@include gradient(darken($m4txt, 10%), lighten($m4txt, 20%));
 	}
 
