@@ -1,44 +1,17 @@
-.card-page{
+.card-page--papilles{
+	@include card-page ($m3back , black, $m3content) ;
 	
 	.card__papilles--name.top{
 		font-size: 2em;
 	}
 
-	&--papilles{
-		@include card-page ($m3back , black, yellowsun, 1.2em) ;
+	.separator{
+		@include separator ($m3txt);
 	}
 
-	
-	section{
-		width: 100%;
-		margin-bottom: $margin;
+	h3{
+		font-weight:normal;
 	}
 	
-	&__content{
-		display:flex;
-		flex-direction:row;
-		justify-content:space-between;
-		text-align: left;
-	}
-
-	&__header--papilles{
-		display:flex;
-		flex-direction:row;
-		justify-content:space-between;
-		align-items:center;
-		.separator{
-		height: 3px;
-		background-color:$m3txt;
-		&--left{
-			width: 30%;
-		}
-
-		&--right{
-			width: 30%;
-		}
-
-		}
-
-	}
 
 }

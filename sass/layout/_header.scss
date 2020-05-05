@@ -2,8 +2,14 @@
 	display:flex;
 	justify-content:center;
 	background-color:$color-primary;
+	
+	a{
+		text-decoration: none;
+	}
+	
 	&__logo{
-	width:450px;
-	padding:50px;
+	font-family: archivo;
+	color:$color-secondary;
+	font-size:4em;;
 	}
 }

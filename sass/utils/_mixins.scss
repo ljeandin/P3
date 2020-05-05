@@ -39,20 +39,20 @@
 @mixin name ($font-family: Arial, $font-size:1em){
 	font-size:$font-size;
 	font-family: $font-family;
-	padding:10px;
+	padding: 10px;
+	margin-bottom:-25px;
 }
 
-@mixin card-page ($backcolor:aqua, $txt-clr:green, $font-family:yellowsun, $font-size:2em){
-	width: auto;
-	height:auto;
-	margin:$margin;
-	margin-bottom: $margin*2;
-	padding:$margin*2;
+@mixin card-page ($backcolor:aqua, $txt-clr:green, $font-family:$m1content, $font-size:2em){
+	
 	background-color:$backcolor;
 	color:$txt-clr;
 	font-family: $font-family;
 	font-size: $font-size;
-	text-decoration: none;
-	text-align: center;
+}
+
+@mixin separator($color: aqua , $height: 3px){
+	height: $height;
+	background-color:$color;
 
 }

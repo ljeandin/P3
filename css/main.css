@@ -27,13 +27,56 @@ body {
   src: url("../media/fonts/anada/ananda_personal_use-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'dancing';
+  src: url("../media/fonts/dancing/dancingscript-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'caveatbold';
+  src: url("../media/fonts/kit/caveat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'caveat';
+  src: url("../media/fonts/kit/caveat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'croissant';
+  src: url("../media/fonts/kit/croissantone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'devonshire';
+  src: url("../media/fonts/kit/devonshire-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'vollkorn';
+  src: url("../media/fonts/kit/vollkorn-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'patrick';
+  src: url("../media/fonts/patrick/patrickhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'archivo';
+  src: url("../media/fonts/archivo/archivoblack-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 .header {
   display: flex;
   justify-content: center;
   background-color: #569C87; }
+  .header a {
+    text-decoration: none; }
   .header__logo {
-    width: 450px;
-    padding: 50px; }
+    font-family: archivo;
+    color: #FCCA46;
+    font-size: 4em; }
 
 .main {
   display: flex;
@@ -57,7 +100,7 @@ body {
   background-color: #FCDFDB;
   color: #3C1218;
   font-size: 2em;
-  font-family: yellowsun;
+  font-family: patrick;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -71,9 +114,12 @@ body {
     -webkit-text-fill-color: transparent;
     font-size: 2em; }
   .card__enchantee--name {
-    font-size: 1.2em;
-    font-family: candy;
-    padding: 10px; }
+    font-size: 1.5em;
+    font-family: devonshire;
+    padding: 10px;
+    margin-bottom: -25px; }
+  .card__enchantee--menu {
+    font-size: 2.5em; }
 
 .card__francaise {
   width: 500px;
@@ -92,8 +138,9 @@ body {
   box-shadow: 0 0 30px #cccccc; }
   .card__francaise--name {
     font-size: 1em;
-    font-family: lobster;
+    font-family: croissant;
     padding: 10px;
+    margin-bottom: -25px;
     background: linear-gradient(to bottom right, #C77412 0%, #905BFD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -105,7 +152,7 @@ body {
   background-color: #F9F9F9;
   color: #0887FB;
   font-size: 2em;
-  font-family: yellowsun;
+  font-family: patrick;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -114,12 +161,15 @@ body {
   text-align: center;
   box-shadow: 0 0 30px #cccccc; }
   .card__papilles--name {
-    font-size: 1em;
-    font-family: anada;
+    font-size: 1.5em;
+    font-family: dancing;
     padding: 10px;
+    margin-bottom: -25px;
     background: linear-gradient(to bottom right, #035fb4 0%, #0887FB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+  .card__papilles--menu {
+    font-size: 2.5em; }
 
 .card__gout {
   width: 500px;
@@ -128,7 +178,7 @@ body {
   background-color: #FDFFFD;
   color: #72BF56;
   font-size: 2em;
-  font-family: yellowsun;
+  font-family: patrick;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -137,12 +187,15 @@ body {
   text-align: center;
   box-shadow: 0 0 30px #cccccc; }
   .card__gout--name {
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: kaushan;
     padding: 10px;
+    margin-bottom: -25px;
     background: linear-gradient(to bottom right, #59a43e 0%, #b0dba0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+  .card__gout--menu {
+    font-size: 2.5em; }
 
 .bientot {
   color: #FCCA46;
@@ -190,148 +243,102 @@ body {
   font-weight: bold;
   padding: 0 30px; }
 
-.card-page .card__enchantee--name.top {
-  font-size: 2em; }
-.card-page--enchantee {
+.titre-page {
+  text-align: center;
+  margin: 50px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 1.5em; }
+
+.card-page {
   width: auto;
   height: auto;
   margin: 50px;
   margin-bottom: 100px;
   padding: 100px;
-  background-color: #FCDFDB;
-  color: #3C1218;
-  font-family: yellowsun;
-  font-size: 2em;
   text-decoration: none;
-  text-align: center; }
-.card-page section {
-  width: 100%;
-  margin-bottom: 50px; }
-.card-page__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left; }
-.card-page__header--enchantee {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .card-page__header--enchantee .separator {
-    height: 3px;
-    background-color: #3C1218; }
-    .card-page__header--enchantee .separator--left {
+  text-align: center;
+  box-shadow: 0 0 30px #cccccc; }
+  .card-page section {
+    width: 100%;
+    margin-bottom: 50px; }
+  .card-page__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .card-page .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px 0 10px 0; }
+    .card-page .line__right {
+      margin-left: auto; }
+  .card-page__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .card-page__header .separator--left {
       width: 30%; }
-    .card-page__header--enchantee .separator--right {
+    .card-page__header .separator--right {
       width: 30%; }
 
-.card-page .card__francaise--name.top {
+.card-page--enchantee {
+  background-color: #FCDFDB;
+  color: #3C1218;
+  font-family: patrick;
   font-size: 2em; }
-.card-page .plat--fra {
-  color: #A56799; }
-.card-page .dessert--fra {
-  color: #6E4CCC; }
+  .card-page--enchantee .card__enchantee--name.top {
+    font-size: 2em; }
+  .card-page--enchantee .separator {
+    height: 3px;
+    background-color: #3C1218; }
+
 .card-page--francaise {
-  width: auto;
-  height: auto;
-  margin: 50px;
-  margin-bottom: 100px;
-  padding: 100px;
   background-color: #FFF5FE;
   color: #C77412;
   font-family: georgia;
-  font-size: 1.2em;
-  text-decoration: none;
-  text-align: center; }
-.card-page section {
-  width: 100%;
-  margin-bottom: 50px; }
-.card-page__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left; }
-.card-page__header--francaise {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .card-page__header--francaise .separator {
+  font-size: 1.2em; }
+  .card-page--francaise .card__francaise--name.top {
+    font-size: 2em; }
+  .card-page--francaise .plat--fra {
+    color: #A56799; }
+    .card-page--francaise .plat--fra .separator {
+      height: 3px;
+      background-color: #A56799; }
+  .card-page--francaise .dessert--fra {
+    color: #6E4CCC; }
+    .card-page--francaise .dessert--fra .separator {
+      height: 3px;
+      background-color: #6E4CCC; }
+  .card-page--francaise .separator {
     height: 3px;
     background-color: #C77412; }
-    .card-page__header--francaise .separator--left {
-      width: 30%; }
-    .card-page__header--francaise .separator--right {
-      width: 30%; }
 
-.card-page .card__papilles--name.top {
-  font-size: 2em; }
 .card-page--papilles {
-  width: auto;
-  height: auto;
-  margin: 50px;
-  margin-bottom: 100px;
-  padding: 100px;
   background-color: #F9F9F9;
   color: black;
-  font-family: yellowsun;
-  font-size: 1.2em;
-  text-decoration: none;
-  text-align: center; }
-.card-page section {
-  width: 100%;
-  margin-bottom: 50px; }
-.card-page__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left; }
-.card-page__header--papilles {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .card-page__header--papilles .separator {
+  font-family: patrick;
+  font-size: 2em; }
+  .card-page--papilles .card__papilles--name.top {
+    font-size: 2em; }
+  .card-page--papilles .separator {
     height: 3px;
     background-color: #0887FB; }
-    .card-page__header--papilles .separator--left {
-      width: 30%; }
-    .card-page__header--papilles .separator--right {
-      width: 30%; }
+  .card-page--papilles h3 {
+    font-weight: normal; }
 
-.card-page .card__gout--name.top {
-  font-size: 2em; }
 .card-page--gout {
-  width: auto;
-  height: auto;
-  margin: 50px;
-  margin-bottom: 100px;
-  padding: 100px;
   background-color: #FDFFFD;
   color: black;
-  font-family: yellowsun;
-  font-size: 1.5em;
-  text-decoration: none;
-  text-align: center; }
-.card-page section {
-  width: 100%;
-  margin-bottom: 50px; }
-.card-page__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left; }
-.card-page__header--gout {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .card-page__header--gout .separator {
+  font-family: patrick;
+  font-size: 2em; }
+  .card-page--gout .card__gout--name.top {
+    font-size: 2em; }
+  .card-page--gout .separator {
     height: 3px;
     background-color: #72BF56; }
-    .card-page__header--gout .separator--left {
-      width: 30%; }
-    .card-page__header--gout .separator--right {
-      width: 30%; }
+  .card-page--gout h3 {
+    font-weight: normal; }
 
 /*# sourceMappingURL=main.css.map */

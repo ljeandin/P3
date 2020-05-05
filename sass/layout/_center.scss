@@ -16,7 +16,7 @@
 }
 
 .card__enchantee{
-	@include card-styling ($m1back, $m1txt);
+	@include card-styling ($m1back, $m1txt, $m1content);
 	@include center;
 	@include shadows;
 	&--icon{
@@ -25,18 +25,23 @@
 	}
 	
 	&--name{
-		@include name (candy, 1.2em);
+		@include name ($m1name, 1.5em);
+	}
+
+		
+	&--menu{
+		font-size:2.5em;
 	}
 }
 
 
 
 .card__francaise{
-	@include card-styling ($m2back, $m2txt, georgia);
+	@include card-styling ($m2back, $m2txt, $m2content);
 	@include center;
 	@include shadows;
 	&--name{
-		@include name (lobster);
+		@include name ($m2name);
 		@include gradient($m2txt, #905BFD);
 
 	}
@@ -44,23 +49,31 @@
 }
 
 .card__papilles{
-	@include card-styling ($m3back, $m3txt);
+	@include card-styling ($m3back, $m3txt, $m3content);
 	@include center;
 	@include shadows;
 	&--name{
-		@include name (anada);
+		@include name ($m3name, 1.5em);
 		@include gradient(darken($m3txt, 15%), $m3txt);
+	}
+	
+	&--menu{
+		font-size:2.5em;
 	}
 
 }
 
 .card__gout{
-	@include card-styling ($m4back, $m4txt);
+	@include card-styling ($m4back, $m4txt, $m4content);
 	@include center;
 	@include shadows;
 	&--name{
-		@include name (kaushan);
+		@include name ($m4name, 1.5em);
 		@include gradient(darken($m4txt, 10%), lighten($m4txt, 20%));
+	}
+
+	&--menu{
+		font-size:2.5em;
 	}
 
 }

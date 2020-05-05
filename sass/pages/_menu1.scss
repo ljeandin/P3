@@ -1,44 +1,12 @@
-.card-page{
+.card-page--enchantee{
+		@include card-page ($m1back , $m1txt) ;
 
-	.card__enchantee--name.top{
+		.card__enchantee--name.top{
 		font-size: 2em;
 	}
-	
-	&--enchantee{
-		@include card-page ($m1back , $m1txt) ;
-	}
-	
-	section{
-		width: 100%;
-		margin-bottom: $margin;
-	}
-	
-	&__content{
-		display:flex;
-		flex-direction:row;
-		justify-content:space-between;
-		text-align: left;
-	}
 
-	&__header--enchantee{
-		display:flex;
-		flex-direction:row;
-		justify-content:space-between;
-		align-items:center;
-		.separator{
-		height: 3px;
-		background-color: $m1txt;
-		&--left{
-			width: 30%;
-		}
-
-		&--right{
-			width: 30%;
-		}
-
-		}
-
+	.separator{
+		@include separator ($m1txt);
 	}
 
 }
-

@@ -1,0 +1,62 @@
+.titre-page{
+	text-align: center;
+	margin:$margin;
+	font-family: Arial;
+	font-weight: bold;
+	font-size:1.5em;
+}
+
+.card-page{
+
+	width: auto;
+	height:auto;
+	margin:$margin;
+	margin-bottom: $margin*2;
+	padding:$margin*2;
+	text-decoration: none;
+	text-align: center;
+	
+	@include shadows;
+
+	section{
+		width: 100%;
+		margin-bottom: $margin;
+	}
+	
+	&__content{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+
+	.line {
+		display:flex;
+		flex-direction:row;
+		justify-content:flex-start;
+		margin:10px 0 10px 0;
+		&__right{
+			margin-left: auto;
+		}
+	}
+
+	&__header{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		align-items:center;
+		
+		.separator{
+		&--left{
+			width: 30%;
+		}
+
+		&--right{
+			width: 30%;
+		}
+
+		}
+
+	}
+
+}
+

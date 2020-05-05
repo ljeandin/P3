@@ -1,43 +1,17 @@
-.card-page{
-
+.card-page--gout{
+	@include card-page ($m4back , black, $m4content) ;
+	
 	.card__gout--name.top{
 		font-size: 2em;
 	}
 	
-	&--gout{
-		@include card-page ($m4back , black, yellowsun, 1.5em) ;
-	}
-	
-	section{
-		width: 100%;
-		margin-bottom: $margin;
-	}
-	
-	&__content{
-		display:flex;
-		flex-direction:row;
-		justify-content:space-between;
-		text-align: left;
+	.separator{
+		@include separator ($m4txt);
+		
 	}
 
-	&__header--gout{
-		display:flex;
-		flex-direction:row;
-		justify-content:space-between;
-		align-items:center;
-		.separator{
-		height: 3px;
-		background-color: $m4txt;
-		&--left{
-			width: 30%;
-		}
-
-		&--right{
-			width: 30%;
-		}
-
-		}
-
+	h3{
+		font-weight:normal;
 	}
 
 }
