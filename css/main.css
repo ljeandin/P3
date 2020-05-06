@@ -93,109 +93,89 @@ body {
   justify-content: center;
   margin: 50px; }
 
-.card__enchantee {
-  width: 500px;
-  height: 700px;
-  margin: 50px;
-  background-color: #FCDFDB;
-  color: #3C1218;
-  font-size: 2em;
-  font-family: patrick;
-  text-decoration: none;
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   box-shadow: 0 0 30px #cccccc; }
-  .card__enchantee--icon {
-    background: linear-gradient(to bottom right, #F04A5E 0%, #F78F6A 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2em; }
-  .card__enchantee--name {
-    font-size: 1.5em;
-    font-family: devonshire;
-    padding: 10px;
-    margin-bottom: -25px; }
-  .card__enchantee--menu {
-    font-size: 2.5em; }
-
-.card__francaise {
-  width: 500px;
-  height: 700px;
-  margin: 50px;
-  background-color: #FFF5FE;
-  color: #C77412;
-  font-size: 2em;
-  font-family: georgia;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 0 30px #cccccc; }
-  .card__francaise--name {
-    font-size: 1em;
-    font-family: croissant;
-    padding: 10px;
-    margin-bottom: -25px;
-    background: linear-gradient(to bottom right, #C77412 0%, #905BFD 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-
-.card__papilles {
-  width: 500px;
-  height: 700px;
-  margin: 50px;
-  background-color: #F9F9F9;
-  color: #0887FB;
-  font-size: 2em;
-  font-family: patrick;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 0 30px #cccccc; }
-  .card__papilles--name {
-    font-size: 1.5em;
-    font-family: dancing;
-    padding: 10px;
-    margin-bottom: -25px;
-    background: linear-gradient(to bottom right, #035fb4 0%, #0887FB 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  .card__papilles--menu {
-    font-size: 2.5em; }
-
-.card__gout {
-  width: 500px;
-  height: 700px;
-  margin: 50px;
-  background-color: #FDFFFD;
-  color: #72BF56;
-  font-size: 2em;
-  font-family: patrick;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 0 30px #cccccc; }
-  .card__gout--name {
-    font-size: 1.5em;
-    font-family: kaushan;
-    padding: 10px;
-    margin-bottom: -25px;
-    background: linear-gradient(to bottom right, #59a43e 0%, #b0dba0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  .card__gout--menu {
-    font-size: 2.5em; }
+  .card__enchantee {
+    width: 500px;
+    height: 700px;
+    margin: 50px;
+    background-color: #FCDFDB;
+    color: #3C1218;
+    font-size: 2em;
+    font-family: patrick;
+    text-decoration: none; }
+    .card__enchantee--icon {
+      background: linear-gradient(to bottom right, #F04A5E 0%, #F78F6A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2em; }
+    .card__enchantee--name {
+      font-size: 1.5em;
+      font-family: devonshire;
+      padding: 10px;
+      margin-bottom: -25px; }
+    .card__enchantee--menu {
+      font-size: 2.5em; }
+  .card__francaise {
+    width: 500px;
+    height: 700px;
+    margin: 50px;
+    background-color: #FFF5FE;
+    color: #C77412;
+    font-size: 2em;
+    font-family: georgia;
+    text-decoration: none; }
+    .card__francaise--name {
+      font-size: 1em;
+      font-family: croissant;
+      padding: 10px;
+      margin-bottom: -25px;
+      background: linear-gradient(to bottom right, #C77412 0%, #905BFD 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  .card__papilles {
+    width: 500px;
+    height: 700px;
+    margin: 50px;
+    background-color: #F9F9F9;
+    color: #0887FB;
+    font-size: 2em;
+    font-family: patrick;
+    text-decoration: none; }
+    .card__papilles--name {
+      font-size: 1.5em;
+      font-family: dancing;
+      padding: 10px;
+      margin-bottom: -25px;
+      background: linear-gradient(to bottom right, #035fb4 0%, #0887FB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .card__papilles--menu {
+      font-size: 2.5em; }
+  .card__gout {
+    width: 500px;
+    height: 700px;
+    margin: 50px;
+    background-color: #FDFFFD;
+    color: #72BF56;
+    font-size: 2em;
+    font-family: patrick;
+    text-decoration: none; }
+    .card__gout--name {
+      font-size: 1.5em;
+      font-family: kaushan;
+      padding: 10px;
+      margin-bottom: -25px;
+      background: linear-gradient(to bottom right, #59a43e 0%, #b0dba0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .card__gout--menu {
+      font-size: 2.5em; }
 
 .bientot {
   color: #FCCA46;
@@ -235,7 +215,7 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   padding: 0 30px;
-  color: #a67903; }
+  color: #f2b004; }
 .footer__btn:active {
   color: #FCCA46;
   text-decoration: none;
@@ -340,5 +320,15 @@ body {
     background-color: #72BF56; }
   .card-page--gout h3 {
     font-weight: normal; }
+
+.card-page--mentions {
+  background-color: #FDFFFD;
+  color: black;
+  font-family: vollkorn;
+  font-size: 1em; }
+  .card-page--mentions .card__mentions--name.top {
+    font-size: 2em;
+    font-family: archivo;
+    color: #FCCA46; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+.card-page--mentions{
+	@include card-page ($mentionsback, $mentionstxt, $mentionscontent,  1em) ;
+
+	.card__mentions--name.top{
+	font-size: 2em;
+	font-family: $mentionsname;
+	color: $color-secondary;
+	}
+}

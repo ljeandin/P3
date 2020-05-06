@@ -15,67 +15,66 @@
 	margin:$margin;
 }
 
-.card__enchantee{
-	@include card-styling ($m1back, $m1txt, $m1content);
+.card{
+	
 	@include center;
 	@include shadows;
-	&--icon{
+	
+	&__enchantee{
+	@include card-styling ($m1back, $m1txt, $m1content);
+	
+		&--icon{
 		@include gradient(#F04A5E, #F78F6A);
 		font-size: 2em;
-	}
-	
-	&--name{
-		@include name ($m1name, 1.5em);
-	}
-
+		}
 		
-	&--menu{
-		font-size:2.5em;
+		&--name{
+			@include name ($m1name, 1.5em);
+		}
+
+			
+		&--menu{
+			font-size:2.5em;
+		}
 	}
-}
 
-
-
-.card__francaise{
+	&__francaise{
 	@include card-styling ($m2back, $m2txt, $m2content);
-	@include center;
-	@include shadows;
-	&--name{
-		@include name ($m2name);
-		@include gradient($m2txt, #905BFD);
+		
+		&--name{
+			@include name ($m2name);
+			@include gradient($m2txt, #905BFD);
+		}
 
 	}
 
-}
-
-.card__papilles{
+	&__papilles{
 	@include card-styling ($m3back, $m3txt, $m3content);
-	@include center;
-	@include shadows;
-	&--name{
-		@include name ($m3name, 1.5em);
-		@include gradient(darken($m3txt, 15%), $m3txt);
-	}
-	
-	&--menu{
-		font-size:2.5em;
+
+		&--name{
+			@include name ($m3name, 1.5em);
+			@include gradient(darken($m3txt, 15%), $m3txt);
+		}
+		
+		&--menu{
+			font-size:2.5em;
+		}
+
 	}
 
-}
-
-.card__gout{
+	&__gout{
 	@include card-styling ($m4back, $m4txt, $m4content);
-	@include center;
-	@include shadows;
-	&--name{
-		@include name ($m4name, 1.5em);
-		@include gradient(darken($m4txt, 10%), lighten($m4txt, 20%));
-	}
 
-	&--menu{
-		font-size:2.5em;
-	}
+		&--name{
+			@include name ($m4name, 1.5em);
+			@include gradient(darken($m4txt, 10%), lighten($m4txt, 20%));
+		}
 
+		&--menu{
+			font-size:2.5em;
+		}
+
+	}
 }
 
 
