@@ -6,7 +6,14 @@
 	}
 	
 	.separator{
-		@include separator ($m4txt);
+		&--left{
+			@include separatorgradient (#41963C , #B6F87A, 8px);
+		}
+
+		&--right{
+			@include separatorgradient (#B6F87A , #41963C, 8px);
+
+		}
 		
 	}
 

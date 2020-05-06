@@ -2,6 +2,10 @@
 	
 	@include card-page ($m2back , $m2txt, $m2content, 1.2em) ;
 
+	h3{
+		font-weight: bold;
+	}
+	
 	.card__francaise--name.top{
 		font-size: 2em;
 	}

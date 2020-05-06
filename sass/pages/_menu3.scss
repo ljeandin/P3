@@ -5,10 +5,26 @@
 		font-size: 2em;
 	}
 
-	.separator{
-		@include separator ($m3txt);
+	.entree--pap{
+		.separator{
+		@include separator (#0228DD , 5px);
 	}
 
+	}
+
+	.plat--pap{
+		.separator{
+		@include separator (#0670F3 , 5px);
+		}
+	}
+
+	.dessert--pap{
+		.separator{
+		@include separator (#229DF9 , 5px);
+		}
+	}
+
+	
 	h3{
 		font-weight:normal;
 	}

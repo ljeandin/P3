@@ -18,10 +18,6 @@
 
 	@include shadows;
 
-	h2{
-		font-weight: normal;
-	}
-
 	section{
 		width: 100%;
 		margin-bottom: $margin;
@@ -50,6 +46,7 @@
 		align-items:center;
 		
 		.separator{
+			
 		&--left{
 			width: 30%;
 		}

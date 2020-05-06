@@ -56,3 +56,8 @@
 	background-color:$color;
 
 }
+
+@mixin separatorgradient($left-clr:aqua, $right-clr:black, $height:3px){
+	background: linear-gradient(to right, $left-clr 0%, $right-clr 100%);
+	height:$height;
+}
