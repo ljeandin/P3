@@ -3,7 +3,7 @@
 	flex-direction:column;
 	flex-wrap:wrap;
 	align-items:center;
-	padding:$margin 0;
+	margin:$margin 0;
 	background-color:$background-color;
 }
 	
@@ -34,7 +34,7 @@
 
 			
 		&--menu{
-			font-size:2.5em;
+			font-size:$menusize;
 		}
 	}
 
@@ -46,6 +46,11 @@
 			@include gradient($m2txt, #905BFD);
 		}
 
+		&--menu{
+			font-size:$menusize;
+			font-weight: bold;
+		}
+
 	}
 
 	&__papilles{
@@ -53,11 +58,11 @@
 
 		&--name{
 			@include name ($m3name, 1.5em);
-			@include gradient(darken($m3txt, 15%), $m3txt);
+			@include gradient(#0431DF, #0887FB);
 		}
 		
 		&--menu{
-			font-size:2.5em;
+			font-size:$menusize;
 		}
 
 	}
@@ -67,11 +72,11 @@
 
 		&--name{
 			@include name ($m4name, 1.5em);
-			@include gradient(darken($m4txt, 10%), lighten($m4txt, 20%));
+			@include gradient(#3D9339, #BFFF7E);
 		}
 
 		&--menu{
-			font-size:2.5em;
+			font-size:$menusize;
 		}
 
 	}

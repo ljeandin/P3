@@ -2,6 +2,12 @@ body {
   font-family: arial;
   margin: 0; }
 
+h2 {
+  font-weight: normal; }
+
+h3 {
+  font-weight: normal; }
+
 @font-face {
   font-family: 'yellowsun';
   src: url("../media/fonts/yellowsun/dk_lemon_yellow_sun-webfont.woff") format("woff");
@@ -67,6 +73,16 @@ body {
   src: url("../media/fonts/archivo/archivoblack-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'typo';
+  src: url("../media/fonts/typo/typo_comics_demo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'typolight';
+  src: url("../media/fonts/typo/typo_comics_light_demo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 .header {
   display: flex;
   justify-content: center;
@@ -83,7 +99,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 50px 0;
+  margin: 50px 0;
   background-color: #FFF; }
 
 .cards-list {
@@ -107,10 +123,10 @@ body {
     background-color: #FCDFDB;
     color: #3C1218;
     font-size: 2em;
-    font-family: patrick;
+    font-family: typolight;
     text-decoration: none; }
     .card__enchantee--icon {
-      background: linear-gradient(to bottom right, #F04A5E 0%, #F78F6A 100%);
+      background: linear-gradient(to right, #F04A5E 0%, #F78F6A 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 2em; }
@@ -120,7 +136,7 @@ body {
       padding: 10px;
       margin-bottom: -25px; }
     .card__enchantee--menu {
-      font-size: 2.5em; }
+      font-size: 2em; }
   .card__francaise {
     width: 500px;
     height: 700px;
@@ -135,9 +151,12 @@ body {
       font-family: croissant;
       padding: 10px;
       margin-bottom: -25px;
-      background: linear-gradient(to bottom right, #C77412 0%, #905BFD 100%);
+      background: linear-gradient(to right, #C77412 0%, #905BFD 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+    .card__francaise--menu {
+      font-size: 2em;
+      font-weight: bold; }
   .card__papilles {
     width: 500px;
     height: 700px;
@@ -145,18 +164,18 @@ body {
     background-color: #F9F9F9;
     color: #0887FB;
     font-size: 2em;
-    font-family: patrick;
+    font-family: typolight;
     text-decoration: none; }
     .card__papilles--name {
       font-size: 1.5em;
       font-family: dancing;
       padding: 10px;
       margin-bottom: -25px;
-      background: linear-gradient(to bottom right, #035fb4 0%, #0887FB 100%);
+      background: linear-gradient(to right, #0431DF 0%, #0887FB 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .card__papilles--menu {
-      font-size: 2.5em; }
+      font-size: 2em; }
   .card__gout {
     width: 500px;
     height: 700px;
@@ -164,18 +183,18 @@ body {
     background-color: #FDFFFD;
     color: #72BF56;
     font-size: 2em;
-    font-family: patrick;
+    font-family: typolight;
     text-decoration: none; }
     .card__gout--name {
       font-size: 1.5em;
       font-family: kaushan;
       padding: 10px;
       margin-bottom: -25px;
-      background: linear-gradient(to bottom right, #59a43e 0%, #b0dba0 100%);
+      background: linear-gradient(to right, #3D9339 0%, #BFFF7E 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .card__gout--menu {
-      font-size: 2.5em; }
+      font-size: 2em; }
 
 .bientot {
   color: #FCCA46;
@@ -239,6 +258,8 @@ body {
   text-decoration: none;
   text-align: center;
   box-shadow: 0 0 30px #cccccc; }
+  .card-page h2 {
+    font-weight: normal; }
   .card-page section {
     width: 100%;
     margin-bottom: 50px; }
@@ -266,13 +287,15 @@ body {
 .card-page--enchantee {
   background-color: #FCDFDB;
   color: #3C1218;
-  font-family: patrick;
+  font-family: typolight;
   font-size: 2em; }
   .card-page--enchantee .card__enchantee--name.top {
     font-size: 2em; }
   .card-page--enchantee .separator {
     height: 3px;
     background-color: #3C1218; }
+  .card-page--enchantee .line__right {
+    font-weight: bold; }
 
 .card-page--francaise {
   background-color: #FFF5FE;
@@ -298,7 +321,7 @@ body {
 .card-page--papilles {
   background-color: #F9F9F9;
   color: black;
-  font-family: patrick;
+  font-family: typolight;
   font-size: 2em; }
   .card-page--papilles .card__papilles--name.top {
     font-size: 2em; }
@@ -311,7 +334,7 @@ body {
 .card-page--gout {
   background-color: #FDFFFD;
   color: black;
-  font-family: patrick;
+  font-family: typolight;
   font-size: 2em; }
   .card-page--gout .card__gout--name.top {
     font-size: 2em; }
@@ -324,7 +347,7 @@ body {
 .card-page--mentions {
   background-color: #FDFFFD;
   color: black;
-  font-family: vollkorn;
+  font-family: arial;
   font-size: 1em; }
   .card-page--mentions .card__mentions--name.top {
     font-size: 2em;

@@ -15,8 +15,12 @@
 	padding:$margin*2;
 	text-decoration: none;
 	text-align: center;
-	
+
 	@include shadows;
+
+	h2{
+		font-weight: normal;
+	}
 
 	section{
 		width: 100%;

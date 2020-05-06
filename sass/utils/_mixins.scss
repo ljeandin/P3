@@ -31,7 +31,7 @@
 }
 
 @mixin gradient ($left-clr:aqua, $right-clr:black){
-	background: linear-gradient(to bottom right, $left-clr 0%, $right-clr 100%);
+	background: linear-gradient(to right, $left-clr 0%, $right-clr 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
