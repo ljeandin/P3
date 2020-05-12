@@ -1,17 +1,12 @@
 .footer__btn{
-	&:link{
+	
+
+	&:link , &:visited , &:active , &:hover {
 		@include btn-styling;
 	}
-	&:visited{
-		@include btn-styling;
-	}
+
 	&:hover{
-		@include btn-styling;
-		color:darken($color-secondary , 10%);
+		animation: wiggle 200ms linear 2;
 	}
-	&:active{
-		@include btn-styling;
-	}
-		
 }
  

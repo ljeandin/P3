@@ -61,3 +61,13 @@
 	background: linear-gradient(to right, $left-clr 0%, $right-clr 100%);
 	height:$height;
 }
+
+@mixin underline($backcolor:$m1txt , $top:-40px){
+
+	position: relative;
+	left: 0;
+	top: $top;
+	width: 100%;
+	height: 3px;
+	background-color: $backcolor;
+}

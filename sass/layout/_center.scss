@@ -16,9 +16,15 @@
 }
 
 .card{
-	
 	@include center;
 	@include shadows;
+
+	&__content{
+        &:hover{
+        animation: zoom 1000ms 200ms;
+        animation-fill-mode: forwards;
+		}
+	}
 	
 	&__enchantee{
 	@include card-styling ($m1back, $m1txt, $m1content);
@@ -86,11 +92,20 @@
 .bientot{
 	color:$color-secondary;
 	background-color:$color-primary;
-	text-align: center;
-	width: 250px;
+	width: 20%;
 	padding:0 50px;
 	margin:auto;
 	margin-bottom:$margin*2;
 	border-radius:10px;
 	font-size:36px;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:baseline;
+	.dot{
+		background:$color-secondary;
+		height:5px;
+		width: 5px;
+		border-radius: 100%;
+	}
 }
