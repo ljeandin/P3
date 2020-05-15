@@ -10,15 +10,50 @@
 		font-size: 2em;
 	}
 
+	.entree--fra{
+		.header--titre h3{
+			&:hover + .underline{
+			@include underline ($m2txt, -10px);
+			transform-origin: left;
+		    animation: underlineanim 1000ms;
+		    animation-fill-mode: forwards;
+		    margin-top: -3px;
+			}
+		}
+	}
+
 	.plat--fra{
 		color:#A56799;
+
+		.header--titre h3{
+			&:hover + .underline{
+			@include underline (#A56799, -10px);
+			transform-origin: left;
+		    animation: underlineanim 1000ms;
+		    animation-fill-mode: forwards;
+		    margin-top: -3px;
+			}
+		}
+
 		.separator{
 		@include separator (#A56799);
 		}
+		
 	}
 
 	.dessert--fra{
 		color:#6E4CCC;
+		
+		.header--titre h3{
+			&:hover + .underline{
+			@include underline (#6E4CCC, -10px);
+			transform-origin: left;
+		    animation: underlineanim 1000ms;
+		    animation-fill-mode: forwards;
+		    margin-top: -3px;
+			}
+		}
+
 		.separator{
 		@include separator (#6E4CCC);
 		}
@@ -27,6 +62,4 @@
 	.separator{
 		@include separator ($m2txt);
 	}
-
-
 }

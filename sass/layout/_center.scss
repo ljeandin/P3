@@ -107,5 +107,15 @@
 		height:5px;
 		width: 5px;
 		border-radius: 100%;
+		animation-name: dot;
+    	animation-duration: 1.4s;
+    	animation-iteration-count: infinite;
+    	&:nth-child(3){
+    		animation-delay:.2s;
+    	}
+
+    	&:nth-child(4){
+    		animation-delay:.4s;
+    	}
 	}
 }

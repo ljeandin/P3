@@ -6,6 +6,17 @@
 	}
 
 	.entree--pap{
+
+		.header--titre h3{
+			&:hover + .underline{
+			@include underline (#0228DD, -40px);
+			transform-origin: left;
+			animation: underlineanim 1000ms;
+		    animation-fill-mode: forwards;
+			margin-top: -3px;
+			}
+		}
+
 		.separator{
 		@include separator (#0228DD , 5px);
 	}
@@ -13,12 +24,34 @@
 	}
 
 	.plat--pap{
+
+		.header--titre h3{
+			&:hover + .underline{
+			@include underline (#0670F3, -40px);
+			transform-origin: left;
+			animation: underlineanim 1000ms;
+		    animation-fill-mode: forwards;
+			margin-top: -3px;
+			}
+		}
+
 		.separator{
 		@include separator (#0670F3 , 5px);
 		}
 	}
 
 	.dessert--pap{
+
+		.header--titre h3{
+			&:hover + .underline{
+			@include underline (#229DF9, -40px);
+			transform-origin: left;
+			animation: underlineanim 1000ms;
+		    animation-fill-mode: forwards;
+			margin-top: -3px;
+			}
+		}
+
 		.separator{
 		@include separator (#229DF9 , 5px);
 		}
@@ -28,6 +61,5 @@
 	h3{
 		font-weight:normal;
 	}
-	
 
 }

@@ -62,14 +62,5 @@
 
 }
 
-.header--titre h3{
-	&:hover + .underline{
-	@include underline;
-	transform-origin: left;
-    animation: underlineanim 1000ms;
-    animation-fill-mode: forwards;
-    margin-top: -3px;
-}
-}
 
 
