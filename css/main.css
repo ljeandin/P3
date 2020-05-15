@@ -306,7 +306,7 @@ h3 {
     font-size: 1.2em; } }
 @media screen and (max-width: 375px) {
   .footer__btn:link, .footer__btn:visited, .footer__btn:active, .footer__btn:hover {
-    text-align: centers; } }
+    text-align: center; } }
 .titre-page {
   text-align: center;
   margin: 50px;
