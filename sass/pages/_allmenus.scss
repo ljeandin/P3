@@ -62,5 +62,52 @@
 
 }
 
+@media screen and (max-width: 1024px){
+	.card-page{
+		margin:15px;
+		margin-bottom: 100px;
+		padding:15px;
+	}	
+}
+
+@media screen and (max-width: 768px){
+	.titre-page{
+		display:none
+	}
+
+	.card-page{
+		font-size:1.5em !important;
+		margin:0;
+		margin-bottom: 50px;
+		padding:15px;
+		box-shadow:none;
+	}
+
+	.underline{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 425px){
+	.line {
+		flex-direction:column;
+		flex-wrap:wrap;
+
+		div{
+		width: 100%;
+		text-align: center;
+		}
+
+		&__right{
+		width: 100%;
+		}
+	}
+
+	h2{
+		font-size: 1.5em !important;
+	}
+
+}
 
 

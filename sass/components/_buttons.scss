@@ -1,12 +1,26 @@
 .footer__btn{
-	
-
 	&:link , &:visited , &:active , &:hover {
 		@include btn-styling;
 	}
 
 	&:hover{
 		animation: wiggle 200ms linear 2;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.footer__btn{
+		&:link , &:visited , &:active , &:hover {
+		font-size:1.2em;
+	}
+	}
+}
+
+@media screen and (max-width: 375px){
+	.footer__btn{
+		&:link , &:visited , &:active , &:hover {
+		text-align: centers;
+	}
 	}
 }
  

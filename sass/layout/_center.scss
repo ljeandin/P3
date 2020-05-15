@@ -18,6 +18,11 @@
 .card{
 	@include center;
 	@include shadows;
+	width:500px;
+	height:700px;
+	margin:$margin;
+	text-decoration: none;
+	font-size: 2em;
 
 	&__content{
         &:hover{
@@ -92,12 +97,12 @@
 .bientot{
 	color:$color-secondary;
 	background-color:$color-primary;
-	width: 20%;
+	width: 18%;
 	padding:0 50px;
 	margin:auto;
 	margin-bottom:$margin*2;
 	border-radius:10px;
-	font-size:36px;
+	font-size:2em;
 	display: flex;
 	flex-direction:row;
 	justify-content:space-between;
@@ -117,5 +122,76 @@
     	&:nth-child(4){
     		animation-delay:.4s;
     	}
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.card{
+		width:400px;
+		height:560px;
+		margin:20px;
+		text-decoration: none;
+		font-size: 1.5em;
+	}
+
+	.bientot{
+	width: 20%;
+	padding:0 20px;
+	font-size:1.5em;
+	font-weight:bold;
+		.dot{
+			height:3px;
+			width: 3px;
+	    }
+	}
+
+	.cards-list{
+	margin:20px;
+}
+	
+}
+
+@media screen and (max-width: 768px){
+	.card{
+		width:300px;
+		height:420px;
+		margin:20px;
+		text-decoration: none;
+
+			&__content{
+		        &:hover{
+		        animation: none;
+				}
+			}	
+	}
+
+	.bientot{
+	width: 26%;
+	padding:0 20px;
+		.dot{
+			height:3px;
+			width: 3px;
+	    }
+	}
+
+	.cards-list{
+	margin:10px;
+}
+
+}
+
+@media screen and (max-width: 425px){
+	.bientot{
+	width: 50%;
+	padding:0 20px;
+	
+	}
+}
+
+@media screen and (max-width: 320px){
+	.bientot{
+	width: 60%;
+	padding:0 20px;
+	
 	}
 }

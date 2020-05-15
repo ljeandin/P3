@@ -11,15 +11,9 @@
 }
 
 @mixin card-styling ($backcolor:aqua, $txt-clr:green, $font-family:yellowsun){
-	width:500px;
-	height:700px;
-	margin:$margin;
 	background-color:$backcolor;
 	color:$txt-clr;
-	font-size: 2em;
 	font-family: $font-family;
-	text-decoration: none;
-
 }
 
 @mixin center{
